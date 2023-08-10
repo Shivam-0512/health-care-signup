@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500&family=Roboto:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Poppins:wght@400;500&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-bg-color: #e7f0fd;
+    --secondary-bg-color: #448FA3;
+    --primary-text-color: #02182B;
+    --secondary-text-color: #fdfdfd;
+}
+
+h1 {
+    font-size: 2.7rem;
+}
+
+
+p {
+    font-size: 1.3rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/* main-container */
+
+.main-container {
+    background: url("graident\ background.jpg");
+    width: 100%;
+    min-height: 100vh;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sign-in-page {
+    height: 630px;
+    width: 500px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--primary-text-color);
+    overflow: hidden;
+    padding: 35px 55px 35px 55px;
+}
+
+
+.sign-in-form-title {
+    display: block;
+    font-family: 'Poppins', sans-serif;
+    font-size: 39px;
+    font-weight: 500;
+    color: var(--secondary-text-color);
+    text-align: center;
+    line-height: 1.2;
+    padding-bottom: 49px;
+}
+
+
+.username {
+    position: relative;
+    border-bottom: 2px solid var(--secondary-text-color);
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.username-input {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    color: var(--secondary-text-color);
+    line-height: 1.5;
+    padding-left: 7px;
+}
+
+.input100 {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    line-height: 1.2;
+    color: var(--primary-text-color);
+    display: block;
+    width: 100%;
+    height: 55px;
+    padding: 0 7px 0 43px;
+    background: 0 0;
+    border: none;
+    outline: none;
+}
+
+.input100::placeholder {
+    color: var(--secondary-text-color);
+}
+
+
+.username i {
+    position: absolute;
+    font-size: 20px;
+    top: 35px;
+    left: 12px;
+    color: var(--primary-text-color);
+}
+
+.input100:focus::placeholder {
+    color: transparent;
+}
+
+
+.forgot-pwd {
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    color: var(--primary-text-color);
+    position: absolute;
+    right: 53px;
+    top: 340px;
+}
+
+
+.sign-in-btn {
+    font-size: 25px;
+    font-family: "Poppins", sans-serif;
+    color: var(--secondary-text-color);
+    position: absolute;
+    background: linear-gradient(to right, #448FA3 0%, #02182B 50%, #448FA3);
+    border-radius: 30px;
+    bottom: 4 0px;
+    padding: 7px 162px;
+    transition: 0.5s;
+    background-size: 200% auto;
+}
+
+.sign-in-btn:hover {
+    background-position: right center;
+}
+
+.other-signin-text{
+    text-align: center;
+    padding-top: 40px;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    color: var(--primary-text-color);
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding-top: 20px;
+}
+
+.logo img{
+    width: 50px;
+}
+
+
+@media screen and (max-width:1075px) {
+    .sign-in-page{
+        width: 400px;
+    }
+
+    .sign-in-btn{
+        padding: 7px 110px;
+        bottom: 20vh;
+    }
+    .other-signin-text{
+        padding-top: 90px;
+    }
+
+    .logo{
+        padding-top: 10px;
+    }
+    .logo img{
+        width: 40px;
+    }
+
+    .forgot-pwd{
+        font-size: 14px;
+    }
+    .other-signin-text{
+        font-size: 14px;
+    }
+
+}
+
+@media screen and (max-width:650px) {
+    .sign-in-page{
+        width: 350px;
+    }
+
+    .sign-in-btn{
+        padding: 7px 90px;
+    }
+    
+}
+
+@media screen and (max-width:500px) {
+    .sign-in-page{
+        width: 300px;
+    }
+
+    .sign-in-btn{
+        padding: 7px 70px;
+        font-size: 20px;
+    }
+
+    .input100{
+        font-size: 12px;
+    }
+
+    .username i{
+        font-size: 16px;
+        top: 38px;
+    }
+
+    .forgot-pwd{
+        font-size: 12px;
+    }
+    .other-signin-text{
+        font-size: 12px;
+    }
+    
+}
+
+@media screen and (max-width:400px) {
+
+    .sign-in-btn{
+        padding: 7px 70px;
+    }
+    
+}
